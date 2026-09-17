@@ -6,10 +6,7 @@
 
     <title>Vite Clone</title>
 
-    <!-- Your CSS -->
     <link rel="stylesheet" href="/index.css" />
-
-    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -22,20 +19,12 @@
     <div class="page">
       <header>
         <div class="head-one">
-          <!-- ==================== -->
-          <!-- VITE LOGO -->
-          <!-- ==================== -->
-
           <div class="logo">
             <img
               src="/Vite _ Next Generation Frontend Tooling/imgi_4_vite-light.t8GCa_VF.svg"
               alt="Vite"
             />
           </div>
-
-          <!-- ==================== -->
-          <!-- DESKTOP NAVIGATION -->
-          <!-- ==================== -->
 
           <div class="nav-container">
             <nav>
@@ -51,8 +40,6 @@
                 <li>
                   <a href="#">Plugins</a>
                 </li>
-
-                <!-- RESOURCES DROPDOWN -->
 
                 <li class="dropdown">
                   <a href="#">Resources⌄</a>
@@ -75,8 +62,6 @@
                   </div>
                 </li>
 
-                <!-- VERSION DROPDOWN -->
-
                 <li class="dropdown">
                   <a href="#">v8.2.2⌄</a>
 
@@ -96,13 +81,7 @@
             </nav>
           </div>
 
-          <!-- ==================== -->
-          <!-- SEARCH + LANGUAGE + ICONS -->
-          <!-- ==================== -->
-
           <div class="search-box-box">
-            <!-- SEARCH -->
-
             <div class="search-box">
               <span>
                 <img
@@ -115,8 +94,6 @@
 
               <span class="shortcut"> ⌘ K </span>
             </div>
-
-            <!-- LANGUAGE -->
 
             <div class="language">
               <span class="language-icon"> 文 </span>
@@ -134,8 +111,6 @@
                 <a href="#">فارسی</a>
               </div>
             </div>
-
-            <!-- SOCIAL ICONS -->
 
             <div class="icons">
               <img
@@ -165,10 +140,6 @@
             </div>
           </div>
 
-          <!-- ==================== -->
-          <!-- MOBILE HAMBURGER -->
-          <!-- ==================== -->
-
           <button
             class="menu-button"
             type="button"
@@ -179,10 +150,6 @@
           >
             =
           </button>
-
-          <!-- ==================== -->
-          <!-- MOBILE OFFCANVAS -->
-          <!-- ==================== -->
 
           <div
             class="offcanvas offcanvas-end"
@@ -215,86 +182,793 @@
           </div>
         </div>
       </header>
-      
+
       <main>
         <section class="hero">
-          <!-- LEFT SIDE -->
           <div class="hero-left">
             <div class="by-void">
               <span>BY</span>
               <strong>VOID(Ø)</strong>
             </div>
-            
+
             <h1>
               The Build Tool
               <br />
               for the Web
             </h1>
-            
+
             <p>
               Vite is a blazing fast frontend build tool powering the next
               generation of web applications.
             </p>
-            
+
             <div class="hero-buttons">
               <a href="#" class="get-started"> Get Started </a>
-              
+
               <a href="#" class="github-button"> View on GitHub </a>
             </div>
-            
-            <!-- COMMAND BOX -->
-            <div class="command-box">
-              <div class="command-tabs">
-                <span class="active-tab">npm</span>
-                <span>Yarn</span>
-                <span>pnpm</span>
-                <span>Bun</span>
-                <span>Deno</span>
-              </div>
-              
-              <div class="command">
-                <span class="command-symbol">$</span>
-                
-                <span> npm create vite@latest </span>
-              </div>
+
+            <div class="command-tabs">
+              <span
+                class="active-tab"
+                onclick="changeCommand('npm', 'npm create vite@latest')"
+              >
+                npm
+              </span>
+
+              <span onclick="changeCommand('Yarn', 'yarn create vite')">
+                Yarn
+              </span>
+
+              <span onclick="changeCommand('pnpm', 'pnpm create vite')">
+                pnpm
+              </span>
+
+              <span onclick="changeCommand('Bun', 'bun create vite')">
+                Bun
+              </span>
+
+              <span onclick="changeCommand('Deno', 'deno init --npm vite')">
+                Deno
+              </span>
+            </div>
+
+            <div class="command">
+              <span class="command-symbol">$</span>
+
+              <span id="command-text"> npm create vite@latest </span>
             </div>
           </div>
-          
-          <!-- RIGHT SIDE -->
+          <!-- </div> -->
+
           <div class="hero-right">
             <img
-            src="/Vite _ Next Generation Frontend Tooling/screenshot-now.png"
-            alt="Vite"
-            class="hero-image"
+              src="/Vite _ Next Generation Frontend Tooling/screenshot-now.png"
+              alt="Vite"
+              class="hero-image"
             />
           </div>
         </section>
-        
-        <!-- TRUSTED SECTION -->
-        
+
         <section class="trusted">
           <h2>Trusted by the world's best software teams</h2>
-          
+
           <div class="companies">
-            <div>OpenAI</div>
-            <div>shopify</div>
-            <div>stripe</div>
-            <div>Linear</div>
-            <div>ClickUp</div>
-            <div>wiz</div>
+            <div>
+              <img
+                src="/Vite _ Next Generation Frontend Tooling/imgi_6_openai.svg"
+                alt=""
+              />
+            </div>
+
+            <div>
+              <img
+                src="/Vite _ Next Generation Frontend Tooling/imgi_7_shopify.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="/Vite _ Next Generation Frontend Tooling/imgi_8_stripe.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="/Vite _ Next Generation Frontend Tooling/imgi_9_linear.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="/Vite _ Next Generation Frontend Tooling/imgi_10_clickup.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="/Vite _ Next Generation Frontend Tooling/imgi_11_wiz.svg"
+                alt=""
+              />
+            </div>
           </div>
         </section>
+
+        <section class="developer-experience">
+          <div class="experience-intro">
+            <h2>Redefining developer<br />experience</h2>
+            <p>Vite makes web development enjoyable again</p>
+          </div>
+
+          <div class="experience-grid">
+            <div class="experience-card">
+              <div class="experience-text">
+                <h3>Instant Server Start</h3>
+
+                <p>
+                  On demand source file serving over native ESM, with blazing
+                  fast dependency pre-bundling.
+                </p>
+              </div>
+
+              <div class="experience-image instant-image">
+                <img
+                  class="instant-background"
+                  src="Vite _ Next Generation Frontend Tooling/imgi_12_vite-featurepanel-1-background.BHnDg8j4.jpg"
+                  alt=""
+                />
+
+                <img
+                  class="instant-terminal"
+                  src="Vite _ Next Generation Frontend Tooling/imgi_13_vite-featurepanel-1-terminal.CQVUoUSU.svg"
+                  alt="Vite terminal"
+                />
+              </div>
+            </div>
+
+            <div class="experience-card">
+              <div class="experience-text">
+                <h3>Lightning Fast HMR</h3>
+
+                <p>
+                  Instantly reflect changes as you save, no matter how big your
+                  app is.
+                </p>
+              </div>
+
+              <div class="experience-image hmr-image">
+                <img
+                  src="Vite _ Next Generation Frontend Tooling/imgi_14_vite-featurepanel-2-terminal.ChpAU6sR.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="rich-features">
+          <div class="rich-feature-card">
+            <div class="rich-feature-text">
+              <h3>Rich Features Out of the Box</h3>
+
+              <p>
+                TypeScript, JSX, CSS, Workers, WebAssembly... and more just a
+                plugin away.
+              </p>
+            </div>
+
+            <div class="rich-feature-image rich-image">
+              <img
+                src="Vite _ Next Generation Frontend Tooling/download-new-f.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="rich-feature-card">
+            <div class="rich-feature-text">
+              <h3>Optimized Build</h3>
+
+              <p>
+                Advanced tree-shaking, built-in minification, fine-grained
+                chunking control powered by Rolldown.
+              </p>
+            </div>
+
+            <div class="rich-feature-image build-image">
+              <img
+                class="build-background"
+                src="Vite _ Next Generation Frontend Tooling/imgi_15_vite-featurepanel-4-background.Bnx0RZk-.jpg"
+                alt=""
+              />
+
+              <img
+                class="build-terminal"
+                src="Vite _ Next Generation Frontend Tooling/imgi_16_vite-featurepanel-4-terminal.BRnxuy_J.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="shared-foundation">
+          <div class="foundation-intro">
+            <h2>A shared foundation<br />to build upon</h2>
+          </div>
+
+          <div class="foundation-grid">
+            <div class="foundation-card">
+              <div class="foundation-text">
+                <h3>Flexible Plugin System</h3>
+
+                <p>
+                  Vite plugins extends Rollup's well-designed plugin interface
+                  with a few extra Vite-specific options.
+                </p>
+              </div>
+
+              <div class="foundation-image">
+                <img
+                  src="Vite _ Next Generation Frontend Tooling/download-use-now.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="foundation-card">
+              <div class="foundation-text">
+                <h3>Fully Typed API</h3>
+
+                <p>Designed to be built on top of.</p>
+              </div>
+
+              <div class="foundation-image typed-image">
+                <img
+                  class="typed-background"
+                  src="Vite _ Next Generation Frontend Tooling/imgi_15_vite-featurepanel-4-background.Bnx0RZk-.jpg"
+                  alt=""
+                />
+
+                <img
+                  class="typed-terminal"
+                  src="Vite _ Next Generation Frontend Tooling/imgi_17_vite-typed-api.B7gyuuaS.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="foundation-card">
+              <div class="foundation-text">
+                <h3>First class SSR Support</h3>
+
+                <p>
+                  It's never been easier to setup custom SSR (Server-Side
+                  Rendering), or build your own SSR framework.
+                </p>
+              </div>
+
+              <div class="foundation-image">
+                <img
+                  src="Vite _ Next Generation Frontend Tooling/imgi_18_vite-ssr-support.DvdwoLgL.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="foundation-card">
+              <div class="foundation-text">
+                <h3>Continuous ecosystem integration</h3>
+
+                <p>
+                  Our CI continuously tests Vite changes against downstream
+                  projects, allowing us to improve Vite with stability and
+                  confidence.
+                </p>
+              </div>
+
+              <div class="foundation-image">
+                <img
+                  src="Vite _ Next Generation Frontend Tooling/imgi_19_vite-ci.rfkpyz0p.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="frameworks">
+          <div class="frameworks-intro">
+            <h2>Powering your favorite<br />frameworks and tools</h2>
+          </div>
+
+          <div class="frameworks-image">
+            <img
+              src="Vite _ Next Generation Frontend Tooling/imgi_21_vite-frameworks.D3X8o4O8.png"
+            />
+          </div>
+        </section>
+
+        <section class="community">
+          <div class="community-header">
+            <div class="community-title">
+              <h2>Loved by the community</h2>
+
+              <p>
+                Don't take our word for it - listen to what<br />
+                Vite community members have to say.
+              </p>
+            </div>
+
+            <div class="community-stats">
+              <div class="community-stat">
+                <strong>80k+</strong>
+                <span>◉ Github Stars</span>
+              </div>
+
+              <div class="community-stat">
+                <strong>80m+</strong>
+                <span>Weekly NPM downloads</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="community-testimonials">
+            <div class="testimonial-column">
+              <div class="testimonial-card">
+                <p>
+                  I'm loving what Vite enables. We've found building SolidStart
+                  that it is less a metaframework but a system of symbiotic Vite
+                  plugins. While built with SolidJS in mind, they should scale
+                  from our simplest template to opinionated starter. We're
+                  building an ecosystem on Vite.
+                </p>
+
+                <div class="testimonial-user">
+                  <img
+                    class="testimonial-avatar"
+                    src="https://pbs.twimg.com/profile_images/1810837163447308292/8Piov0f6_400x400.jpg"
+                    alt="Ryan Carniato"
+                  />
+
+                  <div>
+                    <h4>Ryan Carniato</h4>
+                    <span>@RyanCarniato</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-card">
+                <p>
+                  Vite is basically the united nations of JavaScript at this
+                  point. I'll be there as a representative of Sveltelandia
+                </p>
+
+                <div class="testimonial-user">
+                  <img
+                    class="testimonial-avatar"
+                    src="https://pbs.twimg.com/profile_images/557940120184041473/bFyXy8Pu_400x400.jpeg"
+                  />
+
+                  <div>
+                    <h4>Rich Harris</h4>
+                    <span>@Rich_Harris</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-card">
+                <p>
+                  Each and every time I use Vite, I feel a true sense of pure
+                  and unbridled joy.
+                </p>
+              </div>
+            </div>
+
+            <div class="testimonial-column">
+              <div class="testimonial-card">
+                <p>
+                  It's also a great platform to build a framework on since it
+                  provides a pluggable dev environment.
+                </p>
+
+                <p>Community is amazing too.</p>
+
+                <div class="testimonial-user">
+                  <img
+                    class="testimonial-avatar"
+                    src="https://pbs.twimg.com/profile_images/754886061872979968/BzaOWhs1_400x400.jpg"
+                  />
+
+                  <div>
+                    <h4>Mark Dalgleish</h4>
+                    <span>@markdalgleish</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-card">
+                <p>
+                  Every time I suspect I've hit the bounds of what Vite can do,
+                  I end up being wrong.
+                </p>
+
+                <div class="testimonial-user">
+                  <img
+                    class="testimonial-avatar"
+                    src="https://pbs.twimg.com/profile_images/1374778373239681025/Sc9ehtAr_400x400.jpg"
+                  />
+
+                  <div>
+                    <h4>Jason Miller</h4>
+                    <span>@_developit</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-card">
+                <p>Vite has been a game changer for the industry.</p>
+
+                <div class="testimonial-user">
+                  <img
+                    class="testimonial-avatar"
+                    src="https://pbs.twimg.com/profile_images/1911613315765133312/HVkULegC_400x400.jpg"
+                  />
+
+                  <div>
+                    <h4>David Cramer</h4>
+                    <span>@zeeg</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-column">
+              <div class="testimonial-card">
+                <p>
+                  I am so excited to see so many great frameworks teaming up on
+                  top of vite. So many will benefit. ❤️ to the vite team.
+                </p>
+
+                <div class="testimonial-user">
+                  <img
+                    class="testimonial-avatar"
+                    src="https://pbs.twimg.com/profile_images/3380865881/f73b3687ff39b795db05fcaf35972270_400x400.jpeg"
+                  />
+
+                  <div>
+                    <h4>Dion Almaer</h4>
+                    <span>@dalmaer</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-card">
+                <p>Vite is gonna eat the (JavaScript) world.</p>
+
+                <div class="testimonial-user">
+                  <img
+                    class="testimonial-avatar"
+                    src="https://pbs.twimg.com/profile_images/1910252462126313472/gXgT-jxL_400x400.jpg"
+                  />
+
+                  <div>
+                    <h4>Christoph Nakazawa</h4>
+                    <span>@cpojer</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-card">
+                <p>
+                  Wow, wow, wow, wow, wow, wow, Vite is.... Vite is.... Wow
+                  🤯😂🙏
+                </p>
+
+                <div class="testimonial-user">
+                  <img
+                    class="testimonial-avatar"
+                    src="https://avatars.githubusercontent.com/u/13629190?v=4"
+                  />
+
+                  <div>
+                    <h4>Nikolaj</h4>
+                    <span>@lopugit</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="open-source">
+          <div class="open-source-content">
+            <div class="open-source-text">
+              <h2>Free & open source</h2>
+
+              <p>
+                Vite is free and open source. It is maintained by the community
+                and supported by its sponsors.
+              </p>
+
+              <a href="#" class="sponsor-btn">
+                Become a Sponsor
+                <span>↗</span>
+              </a>
+            </div>
+
+            <div class="open-source-visual">
+              <img
+                src="https://vite.dev/assets/vite-by-voidzero.D7bblMgo.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="sponsors">
+          <div class="sponsor-heading">IN PARTNERSHIP WITH</div>
+
+          <div class="partnership-grid">
+            <div class="sponsor-box">
+              <img
+                class="vite-logo"
+                src="https://sponsors.vite.dev/images/bolt.svg"
+              />
+            </div>
+
+            <div class="sponsor-box">
+              <img
+                class="vite-logo"
+                src="https://sponsors.vite.dev/images/nuxtlabs.svg"
+              />
+            </div>
+          </div>
+
+          <div class="sponsor-heading">PLATINUM SPONSORS</div>
+
+          <div class="platinum-grid">
+            <div class="sponsor-box">
+              <img src="https://sponsors.vite.dev/images/storyblok.png" />
+            </div>
+
+            <div class="sponsor-box">
+              <img
+                class="vite-logo"
+                src="https://sponsors.vite.dev/images/coderabbit.png"
+              />
+            </div>
+
+            <div class="sponsor-box">
+              <img
+                class="vite-logo"
+                src="https://sponsors.vite.dev/images/greptile.png"
+              />
+            </div>
+
+            <div class="sponsor-box">
+              <img
+                class="vite-logo"
+                src="https://sponsors.vite.dev/images/railway.svg"
+              />
+            </div>
+
+            <div class="sponsor-box">
+              <img
+                class="vite-logo"
+                src="https://sponsors.vite.dev/images/serpapi.png"
+              />
+            </div>
+
+            <div class="sponsor-box empty"></div>
+          </div>
+
+          <div class="sponsor-heading">GOLD SPONSORS</div>
+
+          <div class="gold-grid">
+            <div class="sponsor-box">
+              <img
+                class="vite-logo"
+                src="https://sponsors.vite.dev/images/mux.svg"
+                alt=""
+              />
+            </div>
+            <div class="sponsor-box">
+              <img
+                class="vite-logo"
+                src="https://sponsors.vite.dev/images/nx.svg"
+                alt=""
+              />
+            </div>
+            <div class="sponsor-box">
+              <img
+                src="https://sponsors.vite.dev/images/transloadit.png"
+                alt=""
+              />
+            </div>
+            <div class="sponsor-box">
+              <img
+                class="vite-logo"
+                src="https://sponsors.vite.dev/images/handsontable.svg"
+                alt=""
+              />
+            </div>
+            <div class="sponsor-box">
+              <img src="https://sponsors.vite.dev/images/mojam.svg" alt="" />
+            </div>
+
+            <div class="sponsor-box">
+              <img
+                class="vite-logo"
+                src="https://sponsors.vite.dev/images/convex.svg"
+                alt=""
+              />
+            </div>
+            <div class="sponsor-box">
+              <img
+                class="vite-logo"
+                src="https://sponsors.vite.dev/images/zephyr_cloud.png"
+                alt=""
+              />
+            </div>
+            <div class="sponsor-box">
+              <img
+                class="vite-logo"
+                src="https://sponsors.vite.dev/images/catalyst.svg"
+                alt=""
+              />
+            </div>
+            <div class="sponsor-box">
+              <img
+                class="vite-logo"
+                src="https://sponsors.vite.dev/images/sanity.svg"
+                alt=""
+              />
+            </div>
+            <div class="sponsor-box">
+              <img
+                class="vite-logo"
+                src="https://sponsors.vite.dev/images/follower24.svg"
+                alt=""
+              />
+            </div>
+            <div class="sponsor-box">
+              <img
+                src="https://images.opencollective.com/hirefortuna/b1906f3/logo/460.png"
+                alt=""
+              />
+            </div>
+            <div class="sponsor-box">
+              <img
+                src="https://avatars.githubusercontent.com/u/107723282?u=2639caa14ce293a0b6202c5766a40bb99ac9697e&v=4"
+                alt=""
+              />
+            </div>
+            <div class="sponsor-box">
+              <img
+                class="vite-logo"
+                src="https://images.opencollective.com/bairesdev/48bb773/logo/460.png"
+                alt=""
+              />
+            </div>
+            <div class="sponsor-box">
+              <img
+                src="https://avatars.githubusercontent.com/u/327003943?v=4"
+                alt=""
+              />
+            </div>
+            <div class="sponsor-box"></div>
+          </div>
+        </section>
+
+        <section class="start-vite">
+          <div class="start-vite-content">
+            <h2>Start building with Vite</h2>
+
+            <p>
+              Prepare for a development environment that can finally keep pace
+              with the speed of your mind.
+            </p>
+
+            <a href="#" class="start-vite-btn"> Get Started </a>
+          </div>
+        </section>
+
+        <footer class="site-footer">
+          <div class="footer-column">
+            <h4>VITE</h4>
+
+            <a href="#">Guide</a>
+            <a href="#">Config</a>
+            <a href="#">Plugins</a>
+          </div>
+
+          <div class="footer-column">
+            <h4>RESOURCES</h4>
+
+            <a href="#">Team</a>
+            <a href="#">Blog</a>
+            <a href="#">Releases</a>
+          </div>
+
+          <div class="footer-column">
+            <h4>VERSIONS</h4>
+
+            <a href="#">Unreleased Docs</a>
+            <a href="#">Vite 7 Docs</a>
+            <a href="#">Vite 6 Docs</a>
+            <a href="#">Vite 5 Docs</a>
+            <a href="#">Vite 4 Docs</a>
+            <a href="#">Vite 3 Docs</a>
+            <a href="#">Vite 2 Docs</a>
+          </div>
+
+          <div class="footer-column footer-social">
+            <h4>SOCIAL</h4>
+
+            <a href="#">
+              <span class="vite-logo" class="social-icon"
+                ><img
+                  src="Vite _ Next Generation Frontend Tooling/download (12).svg"
+                  alt=""
+              /></span>
+              GitHub
+            </a>
+
+            <a href="#">
+              <span class="social-icon">
+                <img
+                  class="vite-logo"
+                  src="Vite _ Next Generation Frontend Tooling/download (8).svg"
+                  alt=""
+                />
+              </span>
+              Discord
+            </a>
+
+            <a href="#">
+              <span class="social-icon">
+                <img
+                  class="vite-logo"
+                  src="Vite _ Next Generation Frontend Tooling/7.svg"
+                  alt=""
+                />
+              </span>
+              Bluesky
+            </a>
+
+            <a href="#">
+              <span class="social-icon">
+                <img
+                  class="vite-logo"
+                  src="Vite _ Next Generation Frontend Tooling/download (6).svg"
+                  alt=""
+                />
+              </span>
+              X.com
+            </a>
+          </div>
+        </footer>
       </main>
     </div>
-
-    <!-- ==================== -->
-    <!-- BOOTSTRAP JAVASCRIPT -->
-    <!-- ==================== -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      function changeCommand(tab, command) {
+        document.getElementById("command-text").textContent = command;
+
+        let tabs = document.querySelectorAll(".command-tabs span");
+
+        tabs.forEach(function (item) {
+          item.classList.remove("active-tab");
+        });
+
+        event.target.classList.add("active-tab");
+      }
+    </script>
   </body>
 </html>
